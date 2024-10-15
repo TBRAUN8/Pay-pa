@@ -2,7 +2,7 @@
 // captcha_verify.php
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['cf-turnstile-response'])) {
-    $turnstileSecretKey = '0x4AAAAAAAxfmQVFy8n6Hh7nyJ66nVu4X2w'; // Replace with your actual Turnstile secret key
+    $turnstileSecretKey = '0x4AAAAAAAxh62rNPZuddOSwriFKqoijx1Q'; // Replace with your actual Turnstile secret key
     $token = $_POST['cf-turnstile-response'];
     $verifyUrl = "https://challenges.cloudflare.com/turnstile/v0/siteverify";
     
